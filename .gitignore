@@ -27,3 +27,5 @@ replay_pid*
 /Libreria/dist/
 /Libreria/build/
 /ProyectoLibreria/nbproject/private/
+/ProyectoLibreria/build/
+/ProyectoLibreria/dist/

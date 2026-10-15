@@ -60,7 +60,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jPanel14 = new javax.swing.JPanel();
         jLabelLibrosEncontrados = new javax.swing.JLabel();
         jPanel15 = new javax.swing.JPanel();
-        jButtonCargarStock = new javax.swing.JButton();
+        javax.swing.JButton jButtonCargarStock = new javax.swing.JButton();
         jButtonCargarLibro = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -217,7 +217,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jPanel5.add(jPanel12, java.awt.BorderLayout.CENTER);
 
-        jPanel13.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
+        jPanel13.setLayout(new java.awt.FlowLayout(2));
 
         jButtonLimpiarFiltros.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButtonLimpiarFiltros.setText("Limpiar Filtros");
@@ -314,7 +314,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonBuscar;
     private javax.swing.JButton jButtonCargarLibro;
-    private javax.swing.JButton jButtonCargarStock;
     private javax.swing.JButton jButtonLimpiarFiltros;
     private javax.swing.JComboBox<String> jComboBoxAutor;
     private javax.swing.JComboBox<String> jComboBoxEditorial;
