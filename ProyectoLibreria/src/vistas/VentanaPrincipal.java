@@ -28,21 +28,263 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTableCatalogo = new javax.swing.JTable();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jTextFieldBuscador = new javax.swing.JTextField();
+        jButtonBuscar = new javax.swing.JButton();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel12 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jComboBoxAutor = new javax.swing.JComboBox<>();
+        jPanel8 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jComboBoxEditorial = new javax.swing.JComboBox<>();
+        jPanel9 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jComboBoxGenero = new javax.swing.JComboBox<>();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jComboBoxNivelDeVentas = new javax.swing.JComboBox<>();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jComboBoxNivelDeStock = new javax.swing.JComboBox<>();
+        jPanel13 = new javax.swing.JPanel();
+        jButtonLimpiarFiltros = new javax.swing.JButton();
+        jPanel14 = new javax.swing.JPanel();
+        jLabelLibrosEncontrados = new javax.swing.JLabel();
+        jPanel15 = new javax.swing.JPanel();
+        jButtonCargarStock = new javax.swing.JButton();
+        jButtonCargarLibro = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1024, 640));
+        setMinimumSize(new java.awt.Dimension(1024, 640));
+        setPreferredSize(new java.awt.Dimension(1024, 640));
+        setResizable(false);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1043, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 605, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Inicio", jPanel1);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1043, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 605, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Ventas", jPanel2);
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
+        jPanel3.setLayout(new java.awt.BorderLayout());
+
+        jTableCatalogo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTableCatalogo.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Nombre, Autor y Edición", "Editorial", "Género", "Código", "Stock", "Ventas", "Costo y Precio ventas", "Acciones"
+            }
+        ));
+        jScrollPane1.setViewportView(jTableCatalogo);
+        if (jTableCatalogo.getColumnModel().getColumnCount() > 0) {
+            jTableCatalogo.getColumnModel().getColumn(0).setPreferredWidth(260);
+            jTableCatalogo.getColumnModel().getColumn(1).setPreferredWidth(130);
+            jTableCatalogo.getColumnModel().getColumn(2).setPreferredWidth(120);
+            jTableCatalogo.getColumnModel().getColumn(3).setPreferredWidth(120);
+            jTableCatalogo.getColumnModel().getColumn(4).setPreferredWidth(55);
+            jTableCatalogo.getColumnModel().getColumn(5).setPreferredWidth(55);
+            jTableCatalogo.getColumnModel().getColumn(6).setPreferredWidth(150);
+            jTableCatalogo.getColumnModel().getColumn(7).setPreferredWidth(75);
+        }
+
+        jPanel3.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+
+        jPanel5.setLayout(new java.awt.BorderLayout());
+
+        jPanel4.setLayout(new java.awt.BorderLayout(5, 0));
+
+        jTextFieldBuscador.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextFieldBuscador.setText("Buscar por nombre o código");
+        jTextFieldBuscador.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
+        jTextFieldBuscador.addActionListener(this::jTextFieldBuscadorActionPerformed);
+        jPanel4.add(jTextFieldBuscador, java.awt.BorderLayout.CENTER);
+
+        jButtonBuscar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButtonBuscar.setText("Buscar");
+        jButtonBuscar.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
+        jButtonBuscar.setOpaque(true);
+        jButtonBuscar.addActionListener(this::jButtonBuscarActionPerformed);
+        jPanel4.add(jButtonBuscar, java.awt.BorderLayout.LINE_END);
+
+        jPanel5.add(jPanel4, java.awt.BorderLayout.NORTH);
+
+        jPanel6.setLayout(new java.awt.BorderLayout());
+        jPanel5.add(jPanel6, java.awt.BorderLayout.CENTER);
+
+        jPanel12.setLayout(new java.awt.GridLayout(1, 5, 5, 0));
+
+        jPanel7.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel6.setText("Autor");
+        jPanel7.add(jLabel6);
+
+        jComboBoxAutor.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jComboBoxAutor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxAutor.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
+        jComboBoxAutor.addActionListener(this::jComboBoxAutorActionPerformed);
+        jPanel7.add(jComboBoxAutor);
+
+        jPanel12.add(jPanel7);
+
+        jPanel8.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel7.setText("Editorial");
+        jPanel8.add(jLabel7);
+
+        jComboBoxEditorial.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jComboBoxEditorial.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxEditorial.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
+        jPanel8.add(jComboBoxEditorial);
+
+        jPanel12.add(jPanel8);
+
+        jPanel9.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel8.setText("Género");
+        jPanel9.add(jLabel8);
+
+        jComboBoxGenero.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jComboBoxGenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxGenero.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
+        jComboBoxGenero.addActionListener(this::jComboBoxGeneroActionPerformed);
+        jPanel9.add(jComboBoxGenero);
+
+        jPanel12.add(jPanel9);
+
+        jPanel10.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel9.setText("Nivel de ventas");
+        jPanel10.add(jLabel9);
+
+        jComboBoxNivelDeVentas.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jComboBoxNivelDeVentas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxNivelDeVentas.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
+        jPanel10.add(jComboBoxNivelDeVentas);
+
+        jPanel12.add(jPanel10);
+
+        jPanel11.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel10.setText("Nivel de stock");
+        jPanel11.add(jLabel10);
+
+        jComboBoxNivelDeStock.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jComboBoxNivelDeStock.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxNivelDeStock.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
+        jPanel11.add(jComboBoxNivelDeStock);
+
+        jPanel12.add(jPanel11);
+
+        jPanel5.add(jPanel12, java.awt.BorderLayout.CENTER);
+
+        jPanel13.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
+
+        jButtonLimpiarFiltros.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButtonLimpiarFiltros.setText("Limpiar Filtros");
+        jButtonLimpiarFiltros.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
+        jButtonLimpiarFiltros.setOpaque(true);
+        jButtonLimpiarFiltros.addActionListener(this::jButtonLimpiarFiltrosActionPerformed);
+        jPanel13.add(jButtonLimpiarFiltros);
+
+        jPanel5.add(jPanel13, java.awt.BorderLayout.SOUTH);
+
+        jPanel3.add(jPanel5, java.awt.BorderLayout.NORTH);
+
+        jPanel14.setLayout(new java.awt.BorderLayout());
+
+        jLabelLibrosEncontrados.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        jLabelLibrosEncontrados.setText("Libros encontrados:");
+        jPanel14.add(jLabelLibrosEncontrados, java.awt.BorderLayout.WEST);
+
+        jButtonCargarStock.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButtonCargarStock.setText("Cargar stock");
+        jButtonCargarStock.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
+        jButtonCargarStock.setOpaque(true);
+        jPanel15.add(jButtonCargarStock);
+
+        jButtonCargarLibro.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jButtonCargarLibro.setText("Cargar libro");
+        jButtonCargarLibro.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
+        jButtonCargarLibro.setOpaque(true);
+        jPanel15.add(jButtonCargarLibro);
+
+        jPanel14.add(jPanel15, java.awt.BorderLayout.EAST);
+
+        jPanel3.add(jPanel14, java.awt.BorderLayout.SOUTH);
+
+        jTabbedPane1.addTab("Stock", jPanel3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 640, Short.MAX_VALUE)
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonLimpiarFiltrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimpiarFiltrosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonLimpiarFiltrosActionPerformed
+
+    private void jComboBoxGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxGeneroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxGeneroActionPerformed
+
+    private void jComboBoxAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxAutorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxAutorActionPerformed
+
+    private void jButtonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBuscarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonBuscarActionPerformed
+
+    private void jTextFieldBuscadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldBuscadorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldBuscadorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +312,39 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonBuscar;
+    private javax.swing.JButton jButtonCargarLibro;
+    private javax.swing.JButton jButtonCargarStock;
+    private javax.swing.JButton jButtonLimpiarFiltros;
+    private javax.swing.JComboBox<String> jComboBoxAutor;
+    private javax.swing.JComboBox<String> jComboBoxEditorial;
+    private javax.swing.JComboBox<String> jComboBoxGenero;
+    private javax.swing.JComboBox<String> jComboBoxNivelDeStock;
+    private javax.swing.JComboBox<String> jComboBoxNivelDeVentas;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelLibrosEncontrados;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTable jTableCatalogo;
+    private javax.swing.JTextField jTextFieldBuscador;
     // End of variables declaration//GEN-END:variables
 }
