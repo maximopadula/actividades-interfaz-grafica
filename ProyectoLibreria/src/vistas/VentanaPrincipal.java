@@ -96,7 +96,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jTabbedPane1.addTab("Ventas", jPanel2);
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
-        jPanel3.setLayout(new java.awt.BorderLayout());
+        jPanel3.setLayout(new java.awt.BorderLayout(0, 10));
 
         jTableCatalogo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTableCatalogo.setModel(new javax.swing.table.DefaultTableModel(
@@ -124,7 +124,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jPanel3.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
-        jPanel5.setLayout(new java.awt.BorderLayout());
+        jPanel5.setLayout(new java.awt.BorderLayout(0, 10));
 
         jPanel4.setLayout(new java.awt.BorderLayout(5, 0));
 
@@ -148,70 +148,70 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jPanel12.setLayout(new java.awt.GridLayout(1, 5, 5, 0));
 
-        jPanel7.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+        jPanel7.setLayout(new java.awt.BorderLayout());
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
         jLabel6.setText("Autor");
-        jPanel7.add(jLabel6);
+        jPanel7.add(jLabel6, java.awt.BorderLayout.NORTH);
 
         jComboBoxAutor.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBoxAutor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBoxAutor.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
         jComboBoxAutor.addActionListener(this::jComboBoxAutorActionPerformed);
-        jPanel7.add(jComboBoxAutor);
+        jPanel7.add(jComboBoxAutor, java.awt.BorderLayout.CENTER);
 
         jPanel12.add(jPanel7);
 
-        jPanel8.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+        jPanel8.setLayout(new java.awt.BorderLayout());
 
         jLabel7.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
         jLabel7.setText("Editorial");
-        jPanel8.add(jLabel7);
+        jPanel8.add(jLabel7, java.awt.BorderLayout.NORTH);
 
         jComboBoxEditorial.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBoxEditorial.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBoxEditorial.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
-        jPanel8.add(jComboBoxEditorial);
+        jPanel8.add(jComboBoxEditorial, java.awt.BorderLayout.CENTER);
 
         jPanel12.add(jPanel8);
 
-        jPanel9.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+        jPanel9.setLayout(new java.awt.BorderLayout());
 
         jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
         jLabel8.setText("Género");
-        jPanel9.add(jLabel8);
+        jPanel9.add(jLabel8, java.awt.BorderLayout.NORTH);
 
         jComboBoxGenero.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBoxGenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBoxGenero.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
         jComboBoxGenero.addActionListener(this::jComboBoxGeneroActionPerformed);
-        jPanel9.add(jComboBoxGenero);
+        jPanel9.add(jComboBoxGenero, java.awt.BorderLayout.CENTER);
 
         jPanel12.add(jPanel9);
 
-        jPanel10.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+        jPanel10.setLayout(new java.awt.BorderLayout());
 
         jLabel9.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
         jLabel9.setText("Nivel de ventas");
-        jPanel10.add(jLabel9);
+        jPanel10.add(jLabel9, java.awt.BorderLayout.NORTH);
 
         jComboBoxNivelDeVentas.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBoxNivelDeVentas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBoxNivelDeVentas.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
-        jPanel10.add(jComboBoxNivelDeVentas);
+        jPanel10.add(jComboBoxNivelDeVentas, java.awt.BorderLayout.CENTER);
 
         jPanel12.add(jPanel10);
 
-        jPanel11.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+        jPanel11.setLayout(new java.awt.BorderLayout());
 
         jLabel10.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
         jLabel10.setText("Nivel de stock");
-        jPanel11.add(jLabel10);
+        jPanel11.add(jLabel10, java.awt.BorderLayout.NORTH);
 
         jComboBoxNivelDeStock.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBoxNivelDeStock.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBoxNivelDeStock.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)), javax.swing.BorderFactory.createEmptyBorder(6, 12, 6, 12)));
-        jPanel11.add(jComboBoxNivelDeStock);
+        jPanel11.add(jComboBoxNivelDeStock, java.awt.BorderLayout.CENTER);
 
         jPanel12.add(jPanel11);
 
