@@ -217,7 +217,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jPanel5.add(jPanel12, java.awt.BorderLayout.CENTER);
 
-        jPanel13.setLayout(new java.awt.FlowLayout(2));
+        jPanel13.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
 
         jButtonLimpiarFiltros.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButtonLimpiarFiltros.setText("Limpiar Filtros");
